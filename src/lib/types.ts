@@ -1,3 +1,9 @@
+/** Present when pages are fetched with `_embed=1`. */
+export interface WordPressEmbeddedFeaturedMedia {
+  source_url?: string;
+  media_type?: string;
+}
+
 export interface WordPressPage {
   id: number;
   slug: string;
@@ -7,6 +13,9 @@ export interface WordPressPage {
   featured_media: number;
   date: string;
   modified: string;
+  _embedded?: {
+    "wp:featuredmedia"?: WordPressEmbeddedFeaturedMedia[];
+  };
 }
 
 export interface WordPressPost {
@@ -25,6 +34,8 @@ export interface HeroContent {
   subtitle: string;
   ctaText: string;
   ctaUrl: string;
+  /** Full URL from WordPress featured image (REST `_embedded`). */
+  backgroundImageUrl?: string | null;
 }
 
 export interface HowItWorksStep {

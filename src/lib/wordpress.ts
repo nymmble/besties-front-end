@@ -40,9 +40,9 @@ async function wpFetch<T>(endpoint: string): Promise<T | null> {
 }
 
 export async function getPageBySlug(slug: string): Promise<WordPressPage | null> {
-  return wpFetch<WordPressPage[]>(`/pages?slug=${encodeURIComponent(slug)}`).then(
-    (pages) => (pages && pages[0] ? pages[0] : null)
-  );
+  return wpFetch<WordPressPage[]>(
+    `/pages?slug=${encodeURIComponent(slug)}&_embed=1`
+  ).then((pages) => (pages && pages[0] ? pages[0] : null));
 }
 
 export async function getPagesBySlugs(slugs: string[]): Promise<Record<string, WordPressPage | null>> {
