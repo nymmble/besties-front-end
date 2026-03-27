@@ -55,7 +55,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-stone-700 pt-8 text-center text-sm">
-          <p>#{siteConfig.name.replace(/\s/g, "")} — All Dogs Have Superpowers</p>
+          <p>#{siteConfig.name.replace(/\s/g, "")} — Your besties are waiting for you!</p>
         </div>
       </div>
     </footer>
