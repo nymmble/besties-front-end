@@ -9,7 +9,7 @@ const LOGO_SRC =
   "https://bestiesdogcare.wordpress.com/wp-content/uploads/2026/03/signage-1.png";
 
 const navLinks = [
-  { href: "/", label: "Home" },
+  // { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/pricing", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
@@ -28,7 +28,7 @@ export function Navbar() {
               alt={`${siteConfig.name} — ${siteConfig.tagline}`}
               width={1257}
               height={320}
-              className="h-60 w-auto sm:h-80"
+              className="h-60 w-auto sm:h-80 md:h-50"
               sizes="(max-width: 639px) 943px, 1257px"
               priority
             />
