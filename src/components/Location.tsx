@@ -9,14 +9,14 @@ export function Location({ content }: LocationProps) {
   const c = content ?? defaultLocation;
 
   return (
-    <section className="bg-stone-50 py-20 sm:py-28">
+    <section className="bg-cream/40 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-bold text-stone-900 sm:text-4xl">
           Find Us in Queen West
         </h2>
         <div className="mx-auto mt-16 max-w-2xl">
           <div className="rounded-xl border border-stone-200 bg-white p-8 shadow-sm">
-            <h3 className="text-xl font-semibold text-amber-800">
+            <h3 className="text-xl font-semibold text-primary">
               Besties Dog Daycare
             </h3>
             <div className="mt-6 space-y-3 text-stone-600">
@@ -25,20 +25,20 @@ export function Location({ content }: LocationProps) {
                   href={c.addressUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-amber-700 underline transition hover:text-amber-800"
+                  className="text-primary underline transition hover:text-primary-hover"
                 >
                   {c.address}
                 </a>
               </p>
               <p>
-                <a href={`tel:${c.phone.replace(/\D/g, "")}`} className="hover:text-amber-700">
+                <a href={`tel:${c.phone.replace(/\D/g, "")}`} className="hover:text-primary">
                   {c.phone}
                 </a>
               </p>
               <p>
                 <a
                   href={`mailto:${c.email}`}
-                  className="hover:text-amber-700"
+                  className="hover:text-primary"
                 >
                   {c.email}
                 </a>

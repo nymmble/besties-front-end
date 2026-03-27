@@ -3,11 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Client palette */
+  --primary: #0f6964;
+  --primary-hover: #0c5551;
+  --secondary: #eaf571;
+  --cream: #faf0e6;
+  --footer-bg: #0b4542;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-cream: var(--cream);
+  --color-footer: var(--footer-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

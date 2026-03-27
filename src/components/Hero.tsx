@@ -14,7 +14,7 @@ export function Hero({ content }: HeroProps) {
       className={
         bgUrl
           ? "relative overflow-hidden bg-stone-900"
-          : "relative overflow-hidden bg-gradient-to-br from-amber-50 via-white to-amber-50"
+          : "relative overflow-hidden bg-gradient-to-br from-cream via-white to-cream"
       }
     >
       {bgUrl ? (
@@ -30,7 +30,7 @@ export function Hero({ content }: HeroProps) {
           />
         </>
       ) : (
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-200/30 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/35 to-transparent" />
       )}
       <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -57,7 +57,7 @@ export function Hero({ content }: HeroProps) {
               href={c.ctaUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-amber-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-amber-600"
+              className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-primary-hover"
             >
               {c.ctaText}
             </a>

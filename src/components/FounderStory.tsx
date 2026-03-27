@@ -30,7 +30,7 @@ export function FounderStory({ heading, body, ctaText, ctaUrl }: FounderStoryPro
           </div>
           <Link
             href={content.ctaUrl}
-            className="mt-8 inline-block font-semibold text-amber-600 underline decoration-amber-400 underline-offset-4 transition hover:text-amber-700"
+            className="mt-8 inline-block font-semibold text-primary underline decoration-secondary underline-offset-4 transition hover:text-primary-hover"
           >
             {content.ctaText}
           </Link>

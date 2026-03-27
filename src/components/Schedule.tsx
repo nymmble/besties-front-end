@@ -24,7 +24,7 @@ export function Schedule({ items }: ScheduleProps) {
                 key={item.time}
                 className="flex gap-4 rounded-lg border border-stone-200 bg-stone-50/50 p-4"
               >
-                <span className="w-32 shrink-0 font-semibold text-amber-800">
+                <span className="w-32 shrink-0 font-semibold text-primary">
                   {item.time}
                 </span>
                 <span className="text-stone-600">{item.activity}</span>

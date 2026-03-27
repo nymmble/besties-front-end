@@ -3,7 +3,7 @@ import { siteConfig, defaultFooter } from "@/lib/defaults";
 
 export function Footer() {
   return (
-    <footer className="border-t border-stone-200 bg-stone-900 text-stone-300">
+    <footer className="border-t border-primary/20 bg-footer text-stone-300">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 xs:grid-cols-2 lg:grid-cols-3">
           <div>

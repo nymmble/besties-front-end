@@ -14,7 +14,7 @@ export function CTA({
   ctaUrl = siteConfig.bookingUrl,
 }: CTAProps) {
   return (
-    <section className="bg-amber-100/50 py-20 sm:py-28">
+    <section className="bg-cream/70 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-stone-900 sm:text-4xl">
           {heading}
@@ -27,13 +27,13 @@ export function CTA({
             href={ctaUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-amber-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-amber-600"
+            className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-primary-hover"
           >
             {ctaText}
           </a>
           <a
             href={`tel:${siteConfig.phone.replace(/\D/g, "")}`}
-            className="rounded-full border-2 border-amber-500 px-8 py-4 text-lg font-semibold text-amber-700 transition hover:bg-amber-50"
+            className="rounded-full border-2 border-primary px-8 py-4 text-lg font-semibold text-primary transition hover:bg-cream"
           >
             {siteConfig.phone}
           </a>

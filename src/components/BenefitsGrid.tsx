@@ -9,7 +9,7 @@ export function BenefitsGrid({ benefits }: BenefitsGridProps) {
   const b = benefits ?? defaultBenefits;
 
   return (
-    <section className="bg-stone-50 py-20 sm:py-28">
+    <section className="bg-cream/40 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-bold text-stone-900 sm:text-4xl">
           Why Dog Parents Choose Besties
@@ -20,7 +20,7 @@ export function BenefitsGrid({ benefits }: BenefitsGridProps) {
               key={item.title}
               className="rounded-xl border border-stone-200 bg-white p-6 shadow-sm transition hover:shadow-md"
             >
-              <h3 className="text-lg font-semibold text-amber-800">
+              <h3 className="text-lg font-semibold text-primary">
                 {item.title}
               </h3>
               <p className="mt-2 text-stone-600">{item.description}</p>
