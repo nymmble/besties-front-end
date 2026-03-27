@@ -26,10 +26,10 @@ export function Navbar() {
             <Image
               src={LOGO_SRC}
               alt={`${siteConfig.name} — ${siteConfig.tagline}`}
-              width={220}
-              height={56}
+              width={1257}
+              height={320}
               className="h-60 w-auto sm:h-80"
-              sizes="(max-width: 640px) 180px, 220px"
+              sizes="(max-width: 639px) 943px, 1257px"
               priority
             />
           </Link>

@@ -25,7 +25,7 @@ export function Hero({ content }: HeroProps) {
             aria-hidden
           />
           <div
-            className="absolute inset-0 bg-gradient-to-b from-stone-950/75 via-stone-900/55 to-stone-950/80"
+            className="absolute inset-0 bg-gradient-to-b from-stone-950/37.5 via-stone-900/27.5 to-stone-950/40"
             aria-hidden
           />
         </>
