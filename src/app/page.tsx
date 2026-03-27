@@ -9,7 +9,7 @@ import {
   parseBenefitsPage,
   parseSchedulePage,
   parseFounderPage,
-  parseLocationPage,
+  // parseLocationPage,
   // parsePostToTestimonial,
 } from "@/lib/parse";
 import { Hero } from "@/components/Hero";
@@ -18,7 +18,7 @@ import { BenefitsGrid } from "@/components/BenefitsGrid";
 import { Schedule } from "@/components/Schedule";
 // import { Testimonials } from "@/components/Testimonials";
 import { FounderStory } from "@/components/FounderStory";
-import { Location } from "@/components/Location";
+// import { Location } from "@/components/Location";
 import { CTA } from "@/components/CTA";
 import { InstagramFeed } from "@/components/InstagramFeed";
 
@@ -39,7 +39,7 @@ export default async function HomePage() {
   let benefits = null;
   let schedule = null;
   let founder = null;
-  let location = null;
+  // let location = null;
   // let testimonials: { quote: string; author: string }[] = [];
 
   if (hasWordPressConfigured()) {
@@ -49,7 +49,7 @@ export default async function HomePage() {
     benefits = parseBenefitsPage(pages["benefits"]);
     schedule = parseSchedulePage(pages["schedule"]);
     founder = parseFounderPage(pages["founder"]);
-    location = parseLocationPage(pages["location"]);
+    // location = parseLocationPage(pages["location"]);
 
     const posts = await getPosts({ perPage: 10 });
     // testimonials = posts.map(parsePostToTestimonial);
@@ -63,7 +63,7 @@ export default async function HomePage() {
       <Schedule items={schedule} />
       {/* <Testimonials testimonials={testimonials.length > 0 ? testimonials : undefined} /> */}
       <FounderStory {...founder} />
-      <Location content={location} />
+      {/* <Location content={location} /> */}
       <CTA />
       <InstagramFeed />
     </>
