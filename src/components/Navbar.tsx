@@ -1,8 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/lib/defaults";
+
+const LOGO_SRC =
+  "https://bestiesdogcare.wordpress.com/wp-content/uploads/2026/03/signage-1.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -17,12 +21,17 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-cream bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-primary">
-            <span className="text-xl">{siteConfig.name}</span>
-            <span className="hidden text-sm font-normal text-primary/90 sm:inline">
-              {siteConfig.tagline}
-            </span>
+        <div className="flex h-36 items-center justify-between">
+          <Link href="/" className="flex items-center">
+            <Image
+              src={LOGO_SRC}
+              alt={`${siteConfig.name} — ${siteConfig.tagline}`}
+              width={220}
+              height={56}
+              className="h-60 w-auto sm:h-80"
+              sizes="(max-width: 640px) 180px, 220px"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-6 md:flex">
@@ -41,14 +50,14 @@ export function Navbar() {
             >
               {siteConfig.phone}
             </a>
-            <Link
+            {/* <Link
               href={siteConfig.portalUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-stone-600 transition hover:text-primary"
             >
               Sign In
-            </Link>
+            </Link> */}
             <Link
               href={siteConfig.bookingUrl}
               target="_blank"

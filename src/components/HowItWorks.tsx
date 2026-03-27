@@ -17,7 +17,7 @@ export function HowItWorks({ steps }: HowItWorksProps) {
         <div className="mx-auto mt-16 grid max-w-4xl gap-12 sm:grid-cols-3">
           {s.map((step) => (
             <div key={step.number} className="text-center">
-              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-secondary text-2xl font-bold text-primary">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary text-2xl font-bold text-secondary">
                 {step.number}
               </div>
               <h3 className="mt-4 text-xl font-semibold text-stone-900">

@@ -22,7 +22,8 @@ function getFirstLink(html: string): string | null {
   return match ? decodeEntities(match[1]) : null;
 }
 
-function featuredImageSourceUrl(page: WordPressPage): string | null {
+export function getPageFeaturedImageUrl(page: WordPressPage | null): string | null {
+  if (!page) return null;
   const media = page._embedded?.["wp:featuredmedia"]?.[0];
   if (!media?.source_url) return null;
   if (media.media_type && media.media_type !== "image") return null;
@@ -36,7 +37,7 @@ export function parseHeroPage(page: WordPressPage | null): HeroContent | null {
     subtitle: stripHtml(page.excerpt.rendered),
     ctaText: "Book Your Free Assessment",
     ctaUrl: getFirstLink(page.content.rendered) ?? "#",
-    backgroundImageUrl: featuredImageSourceUrl(page),
+    backgroundImageUrl: getPageFeaturedImageUrl(page),
   };
 }
 
