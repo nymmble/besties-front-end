@@ -34,8 +34,6 @@ export default async function PricingPage() {
       <div className="mt-8 flex justify-center">
         <Link
           href={siteConfig.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-block rounded-full bg-primary px-6 py-3 font-semibold text-white transition hover:bg-primary-hover"
         >
           Book Your Free Assessment

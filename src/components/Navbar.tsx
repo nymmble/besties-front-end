@@ -60,8 +60,6 @@ export function Navbar() {
             </Link> */}
             <Link
               href={siteConfig.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-md transition hover:bg-primary-hover"
             >
               Book Free Assessment
@@ -119,8 +117,6 @@ export function Navbar() {
               </Link> */}
               <Link
                 href={siteConfig.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="rounded-full bg-primary px-4 py-2 text-center text-sm font-semibold text-white transition hover:bg-primary-hover"
                 onClick={() => setOpen(false)}
               >

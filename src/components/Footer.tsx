@@ -17,10 +17,10 @@ export function Footer() {
                 {siteConfig.phone}
               </a>
               <a
-                href="mailto:info@bestiesdogcare.com"
+                href="mailto:info@bestiesdogcare.ca"
                 className="block hover:text-white"
               >
-                info@bestiesdogcare.com
+                info@bestiesdogcare.ca
               </a>
             </div>
           </div>
@@ -38,7 +38,7 @@ export function Footer() {
               </Link>
               <p>App Code: {siteConfig.appCode}</p>
               <a
-                href={`mailto:concierge@superdoggostoronto.com?subject=Referral`}
+                href={`mailto:info@bestiesdogcare.ca?subject=Referral`}
                 className="block hover:text-white"
               >
                 Refer a friend

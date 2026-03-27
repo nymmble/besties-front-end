@@ -75,8 +75,6 @@ export function Hero({ content }: HeroProps) {
           >
             <a
               href={c.ctaUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-primary-hover lg:bg-secondary lg:text-primary lg:hover:bg-secondary/90 lg:hover:text-primary"
             >
               {c.ctaText}

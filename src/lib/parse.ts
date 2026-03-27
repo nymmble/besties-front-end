@@ -127,10 +127,10 @@ export function parseLocationPage(page: WordPressPage | null): LocationContent |
   const phoneMatch = content.match(/\(\d{3}\) \d{3}-\d{4}/);
   const emailMatch = content.match(/[\w.-]+@[\w.-]+\.\w+/);
   return {
-    address: addrMatch?.[0] ?? "795 Queen St W, Toronto, ON M6J 1G1",
-    addressUrl: "https://www.google.com/maps/place/795+Queen+St+W,+Toronto,+ON",
+    address: addrMatch?.[0] ?? "",
+    addressUrl: "https://www.google.com/maps/place/",
     phone: phoneMatch?.[0] ?? "(647) 668-4613",
-    email: emailMatch?.[0] ?? "info@bestiesdogcare.com",
+    email: emailMatch?.[0] ?? "info@bestiesdogcare.ca",
     hours: "Mon–Fri: 7:00 AM – 7:00 PM\nSaturday: 9:00 AM – 5:00 PM",
     description: content,
   };

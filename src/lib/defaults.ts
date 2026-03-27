@@ -11,7 +11,7 @@ export const siteConfig = {
   name: "Besties",
   tagline: "Dog Daycare and Boarding",
   phone: "(647) 668-4613",
-  bookingUrl: "https://bestiesdogcare.com/book/",
+  bookingUrl: "/book",
   portalUrl: "https://bestiesdogcare.portal.gingrapp.com/public/login",
   instagram: "https://www.instagram.com/bestiesdogcare",
   instagramHandle: "@bestiesdogcare",
@@ -131,20 +131,19 @@ export const defaultTestimonials: Testimonial[] = [
 ];
 
 export const defaultFounderContent = {
-  heading: "Meet Kritika",
-  body: "SuperDoggos was born from a simple frustration: finding a daycare you could actually trust. Kritika spent 5+ years walking, boarding, and managing another daycare before opening SuperDoggos in 2022.\n\nEvery team member is personally trained by Kritika — in dog behaviour, body language, and first aid. It's not just a job for us. It's a calling.",
+  heading: "Meet Antonella",
+  body: "",
   ctaText: "Our Full Story",
   ctaUrl: "/about",
 };
 
 export const defaultLocation: LocationContent = {
-  address: "795 Queen St W, Toronto, ON M6J 1G1",
-  addressUrl: "https://www.google.com/maps/place/795+Queen+St+W,+Toronto,+ON",
+  address: "",
+  addressUrl: "https://www.google.com/maps/place/",
   phone: siteConfig.phone,
-  email: "concierge@superdoggostoronto.com",
+  email: "info@bestiesdogcare.ca",
   hours: "Mon–Fri: 7:00 AM – 7:00 PM\nSaturday: 9:00 AM – 5:00 PM",
-  description:
-    "In the heart of Queen West, downtown Toronto — a 10-minute walk from Trinity Bellwoods Park. Serving Ossington, Parkdale, Liberty Village, and King West.",
+  description: "",
 };
 
 export const defaultFooter = {

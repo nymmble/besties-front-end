@@ -25,8 +25,6 @@ export function CTA({
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
             href={ctaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-primary-hover"
           >
             {ctaText}
