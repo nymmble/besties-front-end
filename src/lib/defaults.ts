@@ -10,7 +10,7 @@ import type {
 export const siteConfig = {
   name: "Besties",
   tagline: "Dog Daycare and Boarding",
-  phone: "(647) 946-1856",
+  phone: "(647) 668-4613",
   bookingUrl: "https://bestiesdogcare.com/book/",
   portalUrl: "https://bestiesdogcare.portal.gingrapp.com/public/login",
   instagram: "https://www.instagram.com/bestiesdogcare",

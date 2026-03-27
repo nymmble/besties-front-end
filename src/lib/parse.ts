@@ -128,7 +128,7 @@ export function parseLocationPage(page: WordPressPage | null): LocationContent |
   return {
     address: addrMatch?.[0] ?? "795 Queen St W, Toronto, ON M6J 1G1",
     addressUrl: "https://www.google.com/maps/place/795+Queen+St+W,+Toronto,+ON",
-    phone: phoneMatch?.[0] ?? "(647) 946-1856",
+    phone: phoneMatch?.[0] ?? "(647) 668-4613",
     email: emailMatch?.[0] ?? "info@bestiesdogcare.com",
     hours: "Mon–Fri: 7:00 AM – 7:00 PM\nSaturday: 9:00 AM – 5:00 PM",
     description: content,
