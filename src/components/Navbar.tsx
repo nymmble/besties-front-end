@@ -108,7 +108,7 @@ export function Navbar() {
               >
                 {siteConfig.phone}
               </a>
-              <Link
+              {/* <Link
                 href={siteConfig.portalUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -116,7 +116,7 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
               >
                 Sign In
-              </Link>
+              </Link> */}
               <Link
                 href={siteConfig.bookingUrl}
                 target="_blank"
