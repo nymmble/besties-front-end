@@ -15,7 +15,7 @@ export function Schedule({ items }: ScheduleProps) {
           A Day at Besties
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-stone-600">
-          Monday to Friday — same structure on Saturdays with shorter hours
+          Monday to Friday — same structure on Saturdays and Sundays with shorter hours
         </p>
         <div className="mx-auto mt-16 max-w-2xl">
           <div className="space-y-4">

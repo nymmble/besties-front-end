@@ -8,13 +8,13 @@ import type {
 } from "./types";
 
 export const siteConfig = {
-  name: "Besties",
-  tagline: "Dog Daycare and Boarding",
+  name: "Besties ",
+  tagline: "Dog Daycare and Boarding Club",
   phone: "(647) 668-4613",
   bookingUrl: "/book",
   portalUrl: "https://bestiesdogcare.portal.gingrapp.com/public/login",
-  instagram: "https://www.instagram.com/bestiesdogcare",
-  instagramHandle: "@bestiesdogcare",
+  instagram: "https://www.instagram.com/bestiesdogclub",
+  instagramHandle: "@bestiesdogclub",
   // TODO: Replace with actual app code for gingrapp.com
   appCode: "9999",
 };
@@ -142,10 +142,10 @@ export const defaultLocation: LocationContent = {
   addressUrl: "https://www.google.com/maps/place/",
   phone: siteConfig.phone,
   email: "info@bestiesdogcare.ca",
-  hours: "Mon–Fri: 7:00 AM – 7:00 PM\nSaturday: 9:00 AM – 5:00 PM",
+  hours: "Mon–Fri: 7:00 AM – 7:00 PM\nnSaturday & Sunday: 9:00 AM – 5:00 PM",
   description: "",
 };
 
 export const defaultFooter = {
-  hours: "Mon–Fri: 7:00 AM – 7:00 PM\nSaturday: 9:00 AM – 5:00 PM\nSunday: Closed",
+  hours: "Mon–Fri: 7:00 AM – 7:00 PM\nSaturday & Sunday: 9:00 AM – 5:00 PM",
 };

@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 xs:grid-cols-2 lg:grid-cols-3">
           <div>
-            <h3 className="font-semibold text-white">{siteConfig.name}</h3>
+            <h3 className="font-semibold text-white">{siteConfig.name} Club</h3>
             <p className="mt-2 text-sm">{siteConfig.tagline}</p>
           </div>
           <div>
@@ -55,7 +55,7 @@ export function Footer() {
           </div> */}
         </div>
         <div className="mt-12 border-t border-stone-700 pt-8 text-center text-sm">
-          <p>#{siteConfig.name.replace(/\s/g, "")} — Your besties are waiting for you!</p>
+          <p>#BestiesToronto — Your besties are waiting for you!</p>
         </div>
       </div>
     </footer>

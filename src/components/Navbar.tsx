@@ -21,20 +21,20 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-cream bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-36 items-center justify-between">
-          <Link href="/" className="flex items-center">
+        <div className="flex h-44 items-center justify-between gap-3 md:h-48 md:gap-4">
+          <Link href="/" className="flex shrink-0 items-center">
             <Image
               src={LOGO_SRC}
               alt={`${siteConfig.name} — ${siteConfig.tagline}`}
-              width={1257}
-              height={320}
-              className="h-60 w-auto sm:h-80 md:h-50"
-              sizes="(max-width: 639px) 943px, 1257px"
+              width={2000}
+              height={2000}
+              className="h-36 w-auto max-w-none max-h-44 object-contain object-left sm:h-40 md:h-44 md:max-h-48 lg:h-46 xl:h-47"
+              sizes="(max-width: 767px) 320px, (max-width: 1023px) 400px, (max-width: 1279px) 480px, 560px"
               priority
             />
           </Link>
 
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden min-w-0 flex-1 items-center justify-end gap-4 md:flex lg:gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
