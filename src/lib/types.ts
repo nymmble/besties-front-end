@@ -49,6 +49,14 @@ export interface BenefitItem {
   description: string;
 }
 
+export interface BookingOption {
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  external?: boolean;
+}
+
 export interface ScheduleItem {
   time: string;
   activity: string;
