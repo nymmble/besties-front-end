@@ -21,7 +21,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-cream bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-44 items-center justify-between gap-3 md:h-48 md:gap-4">
+        <div className="flex h-30 sm:h-44 items-center justify-between gap-3 md:h-48 md:gap-4">
           <Link href="/" className="flex shrink-0 items-center">
             <Image
               src={LOGO_SRC}

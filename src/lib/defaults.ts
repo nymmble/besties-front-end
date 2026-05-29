@@ -2,6 +2,7 @@ import type {
   HeroContent,
   HowItWorksStep,
   BenefitItem,
+  BookingOption,
   ScheduleItem,
   Testimonial,
   LocationContent,
@@ -12,11 +13,10 @@ export const siteConfig = {
   tagline: "Dog Daycare and Boarding Club",
   phone: "(647) 668-4613",
   bookingUrl: "/book",
-  portalUrl: "https://bestiesdogcare.portal.gingrapp.com/public/login",
+  portalUrl: "https://bestiesdogcareca.portal.gingrapp.com",
   instagram: "https://www.instagram.com/bestiesdogclub",
   instagramHandle: "@bestiesdogclub",
-  // TODO: Replace with actual app code for gingrapp.com
-  appCode: "9999",
+  appCode: "905243",
 };
 
 export const defaultHero: HeroContent = {
@@ -45,6 +45,24 @@ export const defaultHowItWorks: HowItWorksStep[] = [
     title: "SuperDoggo Life",
     description:
       "Your dog joins the pack! Supervised play, walks, rest, and a daily report card sent to your phone.",
+  },
+];
+
+export const defaultBookingOptions: BookingOption[] = [
+  {
+    title: "Sign up",
+    description:
+      "Sign up for our booking system Gingr. It's free and only takes only a few minutes!",
+    buttonText: "Book free assessment",
+    buttonUrl: siteConfig.portalUrl,
+    external: true,
+  },
+  {
+    title: "Call or text",
+    description:
+      "If you'd like to chat first, feel free to give us a call to book an assessment.",
+    buttonText: "647-668-4613",
+    buttonUrl: `tel:${siteConfig.phone.replace(/\D/g, "")}`,
   },
 ];
 
