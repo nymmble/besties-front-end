@@ -62,7 +62,7 @@ export function CopyAppCodeButton({ code }: CopyAppCodeButtonProps) {
     <button
       type="button"
       onClick={handleCopy}
-      className="mt-6 flex items-center justify-between gap-4 rounded-full border-2 border-primary bg-white px-5 py-4 text-left text-lg text-stone-600 transition hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      className="mt-6 flex items-center justify-center gap-4 rounded-full border-2 border-primary bg-white px-5 py-3 text-center text-md text-stone-600 transition hover:bg-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       aria-label={copied ? "Code copied" : `Copy app code ${code}`}
     >
       
