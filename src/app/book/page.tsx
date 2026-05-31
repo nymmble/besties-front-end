@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { BookingGrid } from "@/components/BookingGrid";
-import { CopyAppCodeButton } from "@/components/CopyAppCodeButton";
-import { siteConfig } from "@/lib/defaults";
 
 export const metadata = {
   title: "Book | Besties",
@@ -19,15 +17,6 @@ export default function BookPage() {
 
       <BookingGrid />
 
-      <p className="mt-10 text-lg text-stone-600">
-        We recommend you download the Gingr Pet Parent app and use our code{" "}
-         to create a profile and book with us!
-      </p>
-
-      <div className="w-full flex flex-col items-center">
-        <CopyAppCodeButton code={siteConfig.appCode} />
-      </div>
-      
       <p className="mt-10 text-sm text-stone-500">
         <Link href="/" className="font-medium text-primary underline hover:text-primary-hover">
           Back to home
